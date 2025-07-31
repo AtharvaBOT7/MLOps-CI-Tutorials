@@ -10,22 +10,22 @@ def fifth_power(n):
     return n ** 5
 
 def test_square():
-    assert square(2) == 4
-    assert square(3) == 9
-    assert square(0) == 0
-    assert square(-2) == 4
+    assert square(2) == 4, "Square function failed for input 2"
+    assert square(3) == 9, "Square function failed for input 9"
+    assert square(0) == 0, "Square function failed for input 0"
+    assert square(-2) == 4, "Square function failed for input -2"
 
 def test_cube():
-    assert cube(2) == 8
-    assert cube(3) == 27
-    assert cube(0) == 0
-    assert cube(-2) == -8
+    assert cube(2) == 8, "Cube function failed for input 2"
+    assert cube(3) == 27, "Cube function failed for input 3"
+    assert cube(0) == 0, "Cube function failed for input 0"
+    assert cube(-2) == -8, "Cube function failed for input -2"
 
 def test_fifth_power():
-    assert fifth_power(2) == 32
-    assert fifth_power(3) == 243
-    assert fifth_power(0) == 0
-    assert fifth_power(-2) == -32   
+    assert fifth_power(2) == 32, "Fifth power function failed for input 2"
+    assert fifth_power(3) == 243, "Fifth power function failed for input 3"
+    assert fifth_power(0) == 0, "Fifth power function failed for input 0"
+    assert fifth_power(-2) == -32, "Fifth power function failed for input -2"   
 
 def test_invalid_input():
     with pytest.raises(TypeError):
